@@ -1,0 +1,942 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://ntv.com.tr/teknoloji.rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1280
+      ],
+      "id": "43c657bc-530c-4bce-8c8e-77680c2b1e56",
+      "name": "RSS Read",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://techcrunch.com/feed",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1420
+      ],
+      "id": "6984ebab-7a2b-4e4d-827a-a674e46a0fa3",
+      "name": "RSS Read1",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.cnet.com/rss/news/",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1580
+      ],
+      "id": "fd4badde-84f2-4e19-b00e-b5e8b36b0a5c",
+      "name": "RSS Read2",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://techradar.com/feeds.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1740
+      ],
+      "id": "793d06fa-e245-4893-bf32-f0ba96cfefe3",
+      "name": "RSS Read3",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1900
+      ],
+      "id": "e364abc2-25d3-4956-9b2b-99cfd56e971a",
+      "name": "RSS Read4",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://rss.nytimes.com/services/xml/rss/nyt/Science.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        2060
+      ],
+      "id": "c1e26cb6-5014-40c8-a3fd-6327affef438",
+      "name": "RSS Read5",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://rss.cnn.com/rss/edition_technology.rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        2220
+      ],
+      "id": "5d5c6f65-a1e7-4cb8-b2d8-216b46d30d43",
+      "name": "RSS Read8",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://rss.cnn.com/rss/edition_space.rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        2380
+      ],
+      "id": "67717494-57a1-4358-b72d-35b3cd28ebab",
+      "name": "RSS Read9",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://feeds.bbci.co.uk/news/technology/rss.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        660
+      ],
+      "id": "70ac2450-4121-49f6-96a7-7406e92cbd5d",
+      "name": "RSS Read12",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "http://feeds.bbci.co.uk/news/science_and_environment/rss.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        800
+      ],
+      "id": "45528f56-b2ee-4cce-92bc-45b4809ec77f",
+      "name": "RSS Read13",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.theguardian.com/uk/technology/rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        960
+      ],
+      "id": "da1b03e9-4ae4-4b72-a98b-4914a60c7c92",
+      "name": "RSS Read14",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.theguardian.com/science/rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1120
+      ],
+      "id": "4f8882e6-7665-4999-90e5-258819798591",
+      "name": "RSS Read15",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.lemonde.fr/sciences/rss_full.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        340
+      ],
+      "id": "ef95294c-87c3-420c-ab1c-44282b35e8b6",
+      "name": "RSS Read21",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.france24.com/en/rss",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        500
+      ],
+      "id": "b66086c9-e198-46f7-8238-2e0ab3462f0c",
+      "name": "RSS Read22",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://rss.cbc.ca/lineup/technology.xml",
+        "options": {
+          "ignoreSSL": false
+        }
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "id": "5ae0aff0-80bb-45eb-87e8-f6b166b91b43",
+      "name": "RSS Read25",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.abc.net.au/news/feed/51120/rss.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        180
+      ],
+      "id": "06c91458-ecc2-4b3d-bf47-2ecf8450a588",
+      "name": "RSS Read27",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "url": "https://www.svt.se/nyheter/vetenskap/rss.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        2600
+      ],
+      "id": "b39a7549-d424-47f4-bfa1-d432e3614676",
+      "name": "RSS Read30",
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Wait node'undan gelen tüm verileri birleştir\nconst allRssData = [];\n\n// items dizisini kontrol et ve verileri birleştir\n$input.all().forEach(input => {\n    if (input.json && input.json.items) {\n        // RSS feed verilerini direkt olarak al\n        allRssData.push(...input.json.items);\n    } else if (Array.isArray(input.json)) {\n        // Dizi şeklinde gelen verileri al\n        allRssData.push(...input.json);\n    } else if (input.json) {\n        // Tekil veriyi al\n        allRssData.push(input.json);\n    }\n});\n\nconsole.log(`Toplam işlenecek haber sayısı: ${allRssData.length}`);\n\n// RSS'den görsel çıkarma fonksiyonu\nfunction extractImageFromRSS(item) {\n    let imageUrl = '';\n    \n    // 1. Enclosure URL (podcast/medya dosyaları için)\n    if (item.enclosure && item.enclosure.url && \n        (item.enclosure.url.includes('.jpg') || item.enclosure.url.includes('.png') || \n         item.enclosure.url.includes('.jpeg') || item.enclosure.url.includes('.webp'))) {\n        imageUrl = item.enclosure.url;\n    }\n    // 2. Media:content (RSS medya eklentisi)\n    else if (item['media:content'] && item['media:content']['$'] && item['media:content']['$'].url) {\n        imageUrl = item['media:content']['$'].url;\n    }\n    // 3. Media:thumbnail (küçük resim)\n    else if (item['media:thumbnail'] && item['media:thumbnail']['$'] && item['media:thumbnail']['$'].url) {\n        imageUrl = item['media:thumbnail']['$'].url;\n    }\n    // 4. Image field (bazı RSS formatları)\n    else if (item.image && typeof item.image === 'string') {\n        imageUrl = item.image;\n    }\n    else if (item.image && item.image.url) {\n        imageUrl = item.image.url;\n    }\n    // 5. HTML içeriğinden img tag'lerini bul\n    else if (item.content && typeof item.content === 'string') {\n        const imgMatch = item.content.match(/<img[^>]+src=[\"']([^\"'>]+)[\"'][^>]*>/i);\n        if (imgMatch && imgMatch[1]) {\n            imageUrl = imgMatch[1];\n        }\n    }\n    // 6. Description içeriğinden img tag'lerini bul\n    else if (item.description && typeof item.description === 'string') {\n        const imgMatch = item.description.match(/<img[^>]+src=[\"']([^\"'>]+)[\"'][^>]*>/i);\n        if (imgMatch && imgMatch[1]) {\n            imageUrl = imgMatch[1];\n        }\n    }\n    // 7. ContentSnippet içeriğinden img tag'lerini bul\n    else if (item.contentSnippet && typeof item.contentSnippet === 'string') {\n        const imgMatch = item.contentSnippet.match(/<img[^>]+src=[\"']([^\"'>]+)[\"'][^>]*>/i);\n        if (imgMatch && imgMatch[1]) {\n            imageUrl = imgMatch[1];\n        }\n    }\n    \n    return imageUrl;\n}\n\n// 24 saat öncesini hesapla\nconst twentyFourHoursAgo = new Date(Date.now() - (24 * 60 * 60 * 1000));\n\n// Tarih filtrelemesi yaparak sadece son 24 saatteki haberleri al\nconst recentNews = allRssData.filter((item) => {\n    const newsDate = new Date(item.pubDate || item.isoDate || '1970-01-01');\n    return newsDate >= twentyFourHoursAgo;\n});\n\nconsole.log(`Filtreleme öncesi haber sayısı: ${allRssData.length}`);\nconsole.log(`24 saat filtresi sonrası haber sayısı: ${recentNews.length}`);\n\n// Sadece son 24 saatteki haberleri AI'ya gönder\nconst allNewsFormatted = recentNews.map((item, index) => {\n    // İngilizce başlık ve içeriği çevirmesi için AI'ya talimat ver\n    const title = item.title;\n    const content = item.contentSnippet || item.content || item.description;\n    const date = item.pubDate || item.isoDate || new Date().toISOString();\n    const link = item.link || '';\n    const imageUrl = extractImageFromRSS(item);\n\n    return `${index + 1}. BAŞLIK (Türkçe'ye çevir): ${title}\n     İÇERİK (Türkçe'ye çevir): ${content}\n     TARİH: ${date}\n     LİNK: ${link}\n     GÖRSEL: ${imageUrl}\n     \n     ---`;\n}).join('\\n');\n\nconst prompt = `\nAşağıda ${recentNews.length}  adet RSS haberi bulunuyor (Son 24 saat içinde yayınlanan). \n## GÖREV TANIMI\nVerilen RSS haber listesinden en ilginç 30 haberi seçerek Türkçe analiz raporu hazırla.\n\n\n## SEÇİM KRİTERLERİ (Öncelik Sırası)\n\n### Birinci Öncelik (En az 8-10 haber)\n1. **YAPAY ZEKA GELİŞMELERİ**: ChatGPT, LLM'ler, AI araçları, makine öğrenmesi\n2. **YENİ TEKNOLOJİK ÜRÜNLER**: Akıllı telefonlar, gadget'lar, yenilikçi yazılımlar\n3. **TEKNOLOJİ ŞİRKETLERİ**: Apple, Google, Microsoft, Meta, Tesla, OpenAI haberleri\n\n### İkinci Öncelik (En az 5-7 haber)\n4. **EĞİTİM TEKNOLOJİLERİ**\n5. **UZAY TEKNOLOJİSİ VE ROKET GELİŞMELERİ**\n6. **YENİLENEBİLİR ENERJİ TEKNOLOJİLERİ**\n\n### Üçüncü Öncelik (Kalan haberler)\n7. **BİOTEKNOLOJİ VE SAĞLIK TEKNOLOJİLERİ**\n8. **ROBOTLAR VE OTOMASYON**\n9. **ELEKTRİKLİ ARAÇLAR VE OTONOM SÜRÜŞ**\n10. **SİBER GÜVENLİK**\n\n## SEÇİM KURALLARI\n- ✅ Her konudan maksimum 3-4 haber seç\n- ✅ Aynı haberin farklı kaynaklardaki versiyonlarından sadece birini seç\n- ✅ Güncel ve etkili haberleri önceliklendir\n- ✅ Farklılık ve çeşitlilik sağla\n- ✅ Yayınlanma tarihi 24 saatten eski olan haberleri seçme.\n\n## ÇEVİRİ VE YERELLEŞTIRME TALİMATLARI\n\n### Dil Kuralları\n- Tüm içerikleri **akıcı ve doğal Türkçe**'ye çevir\n- Teknik terimleri uygun Türkçe karşılıklarıyla kullan\n- Anlaşılır ve güncel dil tercih et\n\n### Terim Çevirileri (Örnekler)\n- \"AI/Artificial Intelligence\" → \"Yapay Zeka\"\n- \"Machine Learning\" → \"Makine Öğrenmesi\"\n- \"Deep Learning\" → \"Derin Öğrenme\"\n- \"Smartphone\" → \"Akıllı Telefon\"\n- \"Electric Vehicle\" → \"Elektrikli Araç\"\n- \"Renewable Energy\" → \"Yenilenebilir Enerji\"\n\n## ÇIKTI FORMATI\n\n### Her Haber İçin Şablon\n\\`\\`\\`\nSLIDE [NUMARA]: [TÜRKÇE HABER BAŞLIĞI]\n• RSS Görsel: [Seçilen haberin orijinal görsel URL'si]\n• Açıklama: [50-75 kelimelik tek paragraf halinde: ana konu özeti, neden önemli olduğu ve gelecekteki potansiyel etkilerini içeren kapsamlı açıklama]\n  - Kaynak: [RSS verilerindeki LİNK alanından alınan URL'yi AYNEN buraya kopyala]\n\\`\\`\\`\n\n### ÖNEMLİ: KAYNAK URL KURALI\n- Her haberin \"LİNK:\" satırında verilen URL'yi, \"Kaynak:\" satırına değiştirmeden kopyala\n- URL'yi asla değiştirme, kısaltma veya başka bir URL ile değiştirme\n- Örnek: Eğer RSS'de \"LİNK: https://www.cbc.ca/news/example\" ise, çıktıda \"Kaynak: https://www.cbc.ca/news/example\" olmalı\n\n## KALİTE KONTROL LİSTESİ\n\n### İçerik Kontrolü\n- [ ] 30 farklı haber seçildi mi?\n- [ ] Her konu maksimum 3-4 haberle temsil ediliyor mu?\n- [ ] Tüm başlık ve içerikler Türkçe'ye çevrildi mi?\n- [ ] Teknik terimler doğru çevrildi mi?\n\n### Format Kontrolü\n- [ ] Açıklama bölümü 50-75 kelime arasında mı?\n- [ ] Açıklama tek paragraf halinde mi?\n- [ ] RSS Görsel URL'leri doğru mu?\n\n### Son Kontrol\n- [ ] Aynı konuda çok fazla haber var mı?\n- [ ] Çeviriler akıcı ve anlaşılır mı?\n- [ ] Teknik doğruluk korundu mu?\n\n## ÖRNEK ÇIKTI\n\n\\`\\`\\`\n SLIDE 1: OpenAI'nin Yeni GPT Modeli Bilim İnsanlarını Şaşırttı\n• RSS Görsel: https://example.com/openai-gpt-news-image.jpg\n• Açıklama: OpenAI'nin geliştirdiği yeni yapay zeka modeli matematik ve fen problemlerini insan seviyesinde çözebiliyor. Bu gelişme eğitim ve araştırma alanlarında devrim yaratacak potansiyele sahip çünkü karmaşık bilimsel soruları anlayarak adım adım çözüm üretebiliyor. Gelecekte öğrenciler ve araştırmacılar için güçlü bir yardımcı araç haline gelerek bilimsel keşifleri hızlandırabilir.\n  - Kaynak: https://example.com/openai-gpt-news\n\n\nSLIDE 2: Tesla'nın Yeni Batarya Teknolojisi Menzil Rekoru Kırdı\n• RSS Görsel: https://example.com/tesla-battery-tech.jpg\n• Açıklama: Tesla'nın geliştirdiği yeni lityum-demir-fosfat batarya teknolojisi tek şarjla 1000 km menzil sağlıyor ve daha hızlı şarj süreleri sunuyor. Bu teknoloji elektrikli araçların en büyük dezavantajlarından biri olan menzil kaygısını ortadan kaldırdığı için kritik öneme sahip. Elektrikli araç benimsenmesini hızlandırarak fosil yakıt bağımlılığını önemli ölçüde azaltabilir.\n  - Kaynak: https://example.com/tesla-battery-news\n\\`\\`\\`\n\n## KULLANIM TALİMATI\n1. RSS verilerini yukarıdaki formatta hazırla\n2. Çıktıyı kalite kontrol listesiyle değerlendir\n3. Gerekirse düzeltmeler yap\n${allNewsFormatted}\n\n\n`;\n\nreturn [{\n    json: {\n        prompt: prompt,\n        totalNewsCount: recentNews.length,\n        filteredNewsCount: recentNews.length,\n        originalNewsCount: allRssData.length,\n        processedAt: new Date().toISOString(),\n        debug: {\n            inputCount: $input.all().length,\n            dataStructure: recentNews.slice(0, 2)\n        }\n    }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1560,
+        1540
+      ],
+      "id": "e5c7c3cb-52e8-408f-9b0e-b6d224baa34a",
+      "name": "News Processor"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.prompt }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2,
+      "position": [
+        1920,
+        1540
+      ],
+      "id": "9b3ca6a9-5430-479e-916c-321a94017ed0",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-2.5-pro",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1960,
+        1880
+      ],
+      "id": "507942e6-96d2-419d-95c9-12c99f00d475",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "ytoHpLIQ1bvqkRG2",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// HTML Slide Content Processor - Slide Numaraları ve Kaynak Gösterimi\nconst inputData = $input.first().json;\nlet aiResponse = inputData.text || inputData.response || inputData.output || JSON.stringify(inputData);\n\nconsole.log('AI Response Debug:', aiResponse);\n\n// Tarih ve temel veri\nconst today = new Date();\nconst dateStr = today.toLocaleDateString('tr-TR');\n\n// Dosya adı için tarih formatı (örn: \"30 Haziran\")\nconst monthNames = [\n  'Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran',\n  'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'\n];\nconst day = today.getDate();\nconst monthName = monthNames[today.getMonth()];\nconst dateForFileName = `${day} ${monthName}`;\n\nconst slideData = {\n  title: 'Teknoloji Haberleri - ' + dateStr,\n  slides: []\n};\n\n// İntro slide ekle (Slide 1 olarak numaralandırılacak)\nslideData.slides.push({\n  title: 'Teknoloji Haberleri Özeti',\n  content: '<h2>' + dateStr + '</h2><h3>Günün En İlginç 30 Teknoloji Haberi</h3><p>RSS kaynaklarından alınan gerçek haberler ve görseller.</p>',\n  type: 'intro',\n  slideNumber: 1,\n  backgroundImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80'\n});\n\n// Türkçe karakterleri doğru büyük harfe çevir\nfunction toTurkishUpperCase(str) {\n  return str.replace(/i/g, 'İ')\n            .replace(/ı/g, 'I')\n            .replace(/ş/g, 'Ş')\n            .replace(/ğ/g, 'Ğ')\n            .replace(/ü/g, 'Ü')\n            .replace(/ö/g, 'Ö')\n            .replace(/ç/g, 'Ç')\n            .toUpperCase();\n}\n\n// HTML attribute'larını güvenli hale getiren fonksiyon\nfunction escapeHtml(text) {\n  if (typeof text !== 'string') return '';\n  return text.replace(/&/g, '&amp;')\n             .replace(/</g, '&lt;')\n             .replace(/>/g, '&gt;')\n             .replace(/\"/g, '&quot;')\n             .replace(/'/g, '&#39;');\n}\n\n// Varsayılan teknoloji görselleri (RSS'de görsel yoksa)\nconst defaultTechImages = [\n  'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',\n  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',\n  'https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',\n  'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80',\n  'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80'\n];\n\n// AI response işle\nif (aiResponse && typeof aiResponse === 'string' && aiResponse !== 'Veri bulunamadı') {\n  const slideMatches = aiResponse.match(/SLIDE [0-9]+:[^]*?(?=(?:SLIDE [0-9]+:|$))/g) || [];\n  \n  if (slideMatches.length > 0) {\n    slideMatches.forEach((slideText, index) => {\n      const lines = slideText.split('\\n').filter(line => line.trim());\n      \n      if (lines.length > 0) {\n        const titleMatch = lines[0].match(/^SLIDE [0-9]+:[ ]*(.+)$/);\n        let title = titleMatch ? titleMatch[1].trim() :\n          'Haber ' + (index + 1);\n        \n        // Türkçe büyük harf dönüşümü\n        title = toTurkishUpperCase(title);\n        \n        let content = '';\n        let rssImageUrl = '';\n        let sourceInfo = {\n          name: '',\n          link: ''\n        };\n        \n        const contentLines = lines.slice(1).filter(line => line.trim());\n        \n        contentLines.forEach(line => {\n          const trimmedLine = line.trim();\n          // Kaynak satırını daha geniş arama ile yakala\n          if (trimmedLine.startsWith('•') || trimmedLine.startsWith('-') || \n              trimmedLine.toLowerCase().includes('kaynak:') || \n              trimmedLine.toLowerCase().includes('rss görsel:')) {\n            const cleanLine = trimmedLine.replace(/^[•\\-][ ]*/, '');\n            if (cleanLine.includes(':')) {\n              const parts = cleanLine.split(':');\n              if (parts.length > 1) {\n                const fieldName = parts[0].trim();\n                let fieldValue = parts.slice(1).join(':').trim();\n                \n                // RSS Görsel alanını özel olarak yakala\n                if (fieldName === 'RSS Görsel') {\n                  if (fieldValue && fieldValue !== 'YOK' && fieldValue !== '' && fieldValue.startsWith('http')) {\n                    rssImageUrl = fieldValue;\n                    console.log(`Slide ${index + 1}: RSS görsel bulundu - ${fieldValue}`);\n                  }\n                } \n                // Kaynak bilgisini yakala  \n                else if (fieldName.toLowerCase() === 'kaynak') {\n                  console.log(`Slide ${index + 1}: Kaynak satırı işleniyor: \"${cleanLine}\"`);\n                  \n                  // URL'i bul\n                  const linkMatch = fieldValue.match(/(https?:\\/\\/[^\\s]+)/);\n                  if (linkMatch) {\n                    sourceInfo.link = linkMatch[0];\n                    \n                    // Site adını al - format: \"NTV: https://...\" veya \"The Guardian: https://...\"\n                    let siteName = '';\n                    \n                    // URL'den önceki kısmı al\n                    const beforeUrl = fieldValue.substring(0, fieldValue.indexOf(linkMatch[0])).trim();\n                    if (beforeUrl && beforeUrl !== '') {\n                      siteName = beforeUrl.replace(/^:+|:+$/g, '').trim();\n                    }\n                    \n                    // Eğer hala boşsa URL'den site adını çıkar\n                    if (!siteName) {\n                      try {\n                        const urlObj = new URL(sourceInfo.link);\n                        siteName = urlObj.hostname.replace('www.', '').toUpperCase();\n                      } catch (e) {\n                        siteName = 'Haber Kaynağı';\n                      }\n                    }\n                    \n                    sourceInfo.name = siteName;\n                    console.log(`Slide ${index + 1}: Kaynak başarıyla ayrıştırıldı - Ad: \"${sourceInfo.name}\", Link: \"${sourceInfo.link}\"`);\n                  } else {\n                    console.log(`Slide ${index + 1}: Kaynak satırında URL bulunamadı: \"${fieldValue}\"`);\n                  }\n                } \n                // Diğer alanları içeriğe ekle\n                else if (fieldName !== 'RSS Görsel' && fieldName.toLowerCase() !== 'kaynak') {\n                  // İçeriği temizle: son kısımdaki --  ve - karakterlerini kaldır\n                  let cleanContent = fieldValue.replace(/\\s*-+\\s*$/, '').trim();\n                  if (cleanContent) {\n                    content += cleanContent + ' ';\n                  }\n                }\n              }\n            } else {\n              // İçeriği temizle: son kısımdaki --  ve - karakterlerini kaldır\n              let cleanContent = cleanLine.replace(/\\s*-+\\s*$/, '').trim();\n              if (cleanContent) {\n                content += cleanContent + ' ';\n              }\n            }\n          }\n        });\n        \n        // Debug: Kaynak bilgisini kontrol et\n        console.log(`Slide ${index + 1}: sourceInfo kontrolü`, sourceInfo);\n        \n        // Görsel öncelik: 1) RSS'den gelen gerçek görsel 2) Varsayılan teknoloji görseli\n        let slideImage;\n        if (rssImageUrl && rssImageUrl.length > 10 && rssImageUrl.startsWith('http')) {\n          slideImage = rssImageUrl;\n          console.log(`Slide ${index + 1}: RSS görsel kullanılıyor - ${rssImageUrl}`);\n        } else {\n          // RSS'de görsel yoksa varsayılan teknoloji görseli kullan\n          slideImage = defaultTechImages[index % defaultTechImages.length];\n          console.log(`Slide ${index + 1}: RSS görsel yok, varsayılan teknoloji görseli kullanılıyor`);\n        }\n        \n        // Final slide objesini oluştur - Slide numarası ekle (intro = 1, haber slide'ları 2'den başlar)\n        const slideNumber = index + 2; // intro slide'ı 1 olduğu için haber slide'ları 2'den başlar\n        \n        // Kaynak linkini içeriğin sonuna güzelce ekle\n        let sourceHtml = '';\n        if (sourceInfo.link && sourceInfo.link.trim() !== '') {\n          const safeSourceName = escapeHtml(sourceInfo.name || 'Haber Kaynağı');\n          sourceHtml = `\n            <div class=\"news-source-container\">\n              <div class=\"source-label\">\n                📰 <strong>Kaynak:</strong>\n              </div>\n              <a href=\"${sourceInfo.link}\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"source-link\">\n                🔗 ${safeSourceName}\n              </a>\n            </div>`;\n          console.log(`Slide ${index + 1}: Kaynak linki eklendi - ${safeSourceName}`);\n        } else {\n          console.log(`Slide ${index + 1}: Kaynak linki bulunamadı veya boş`);\n        }\n        \n        const finalSlide = {\n          title: title,\n          content: '<div class=\"slide-content\">' + content + sourceHtml + '</div>',\n          type: 'content',\n          imageUrl: slideImage,\n          sourceLink: sourceInfo.link || null,\n          sourceName: sourceInfo.name || null,\n          slideNumber: slideNumber\n        };\n        \n        slideData.slides.push(finalSlide);\n        console.log(`Slide ${slideNumber}: Slide oluşturuldu -`, finalSlide.title);\n      }\n    });\n  }\n  \n  if (slideMatches.length === 0) {\n    slideData.slides.push({\n      title: 'AI Analizi',\n      content: '<div class=\"error-content\"><p>' + aiResponse.substring(0, 1000) + '</p></div>',\n      type: 'content',\n      slideNumber: 2\n    });\n  }\n} else {\n  slideData.slides.push({\n    title: 'Bilgi',\n    content: '<div class=\"error-content\"><p>AI Agent yanıtı işlenemiyor. Lütfen workflow bağlantılarını kontrol edin.</p></div>',\n    type: 'error',\n    slideNumber: 2\n  });\n}\n\n// Tüm slide'lara slide numarası ekle\nslideData.slides.forEach((slide, index) => {\n  if (!slide.slideNumber) {\n    slide.slideNumber = index + 1;\n  }\n});\n\n// Trend analizi slide'ı ekle\nconst lastSlideNumber = slideData.slides.length + 1;\nslideData.slides.push({\n  title: 'Günün Teknoloji Trendleri',\n  content: '<div class=\"summary-slide\"><ul class=\"trend-list\"><li>🤖 Yapay Zeka ve ChatGPT gelişmeleri</li><li>🚗 Elektrikli araç ve otonom sürüş</li><li>📱 Yeni akıllı telefon ve gadget lansmanları</li><li>🔒 Siber güvenlik ve veri gizliliği</li><li>🚀 Uzay teknolojisi ve roket projeleri</li><li>💡 Yenilenebilir enerji çözümleri</li><li>🏢 Büyük teknoloji şirketlerinin stratejileri</li><li>🔬 Biyoteknoloji ve sağlık innovasyonları</li></ul></div>',\n  type: 'summary',\n  slideNumber: lastSlideNumber\n});\n\n// HTML template oluştur\nlet htmlTemplate = '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>' + slideData.title + '</title>';\nhtmlTemplate += '<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css\">';\nhtmlTemplate += '<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/white.min.css\">';\nhtmlTemplate += '<style>';\nhtmlTemplate += '.reveal{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:16px}';\nhtmlTemplate += '.reveal h1{font-size:2.0em;color:#2c3e50;margin-bottom:0.3em}';\nhtmlTemplate += '.reveal h2{font-size:1.6em;color:#2c3e50;border-bottom:2px solid #3498db;padding-bottom:0.2em;margin-bottom:0.5em}';\nhtmlTemplate += '.reveal .slides section{text-align:left;padding:15px;height:100vh;display:flex;flex-direction:column;box-sizing:border-box;position:relative}';\nhtmlTemplate += '.slide-content{font-size:24px;line-height:1.5;background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);flex:1;overflow:hidden}';\nhtmlTemplate += '.intro-slide{text-align:center;padding:40px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;border-radius:15px;height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center}';\nhtmlTemplate += '.intro-slide h1,.intro-slide h2,.intro-slide h3{color:white;margin:0.5em 0}';\nhtmlTemplate += '.intro-slide h1{font-size:2.2em}';\nhtmlTemplate += '.intro-slide h2{font-size:1.8em}';\nhtmlTemplate += '.intro-slide h3{font-size:1.4em}';\nhtmlTemplate += '.intro-slide p{font-size:1.2em;margin:1em 0}';\nhtmlTemplate += '.trend-list{list-style:none;padding:0;font-size:1.1em;margin:0}';\nhtmlTemplate += '.trend-list li{padding:12px 20px;background:#f8f9fa;border-radius:6px;border-left:4px solid #3498db;margin:8px 0;font-size:15px}';\nhtmlTemplate += '.error-content{color:#d32f2f;background:#ffebee;padding:15px;border-radius:6px;font-size:14px}';\n\n// Slide numarası için CSS\nhtmlTemplate += '.slide-number{position:absolute;top:15px;right:20px;background:rgba(52,152,219,0.8);color:white;padding:8px 15px;border-radius:20px;font-size:14px;font-weight:bold;z-index:1000}';\n\n// Kaynak gösterimi için CSS\nhtmlTemplate += '.news-source-container{margin-top:25px;padding-top:20px;border-top:2px solid #e8f4fd;background:#f8f9fa;padding:15px;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.05)}';\nhtmlTemplate += '.source-label{font-size:14px;color:#666;margin-bottom:10px;font-weight:500}';\nhtmlTemplate += '.source-link{display:inline-block;background:linear-gradient(135deg,#3498db,#2980b9);color:white;text-decoration:none;padding:10px 20px;border-radius:25px;font-size:13px;font-weight:600;transition:all 0.3s ease;box-shadow:0 2px 6px rgba(52,152,219,0.3)}';\nhtmlTemplate += '.source-link:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(52,152,219,0.4);background:linear-gradient(135deg,#2980b9,#3498db)}';\n\nhtmlTemplate += '@media (max-width: 768px){.slide-content{padding:15px}.slide-number{top:10px;right:15px;padding:6px 12px;font-size:12px}}';\nhtmlTemplate += '.reveal .controls{position:fixed !important;top:50% !important;left:0 !important;right:0 !important;bottom:auto !important;width:100% !important;height:0 !important;transform:translateY(-50%) !important}';\nhtmlTemplate += '.reveal .controls .navigate-left,.reveal .controls .navigate-right{position:fixed !important;top:50% !important;bottom:auto !important;transform:translateY(-50%) !important}';\nhtmlTemplate += '.reveal .controls .navigate-left{left:15px !important;right:auto !important}';\nhtmlTemplate += '.reveal .controls .navigate-right{right:15px !important;left:auto !important}';\nhtmlTemplate += '</style>';\nhtmlTemplate += '</head><body><div class=\"reveal\"><div class=\"slides\">';\n\n// Slide'ları oluştur\nfor (let i = 0; i < slideData.slides.length; i++) {\n  const slide = slideData.slides[i];\n  \n  // Slide numarası HTML'i\n  const slideNumberHtml = `<div class=\"slide-number\">Slide ${slide.slideNumber || (i + 1)}</div>`;\n  \n  if (slide.type === 'intro') {\n    htmlTemplate += '<section>' + slideNumberHtml + '<div class=\"intro-slide\"><h1>' + escapeHtml(slide.title) + '</h1>' + slide.content + '</div></section>';\n  } else if (slide.imageUrl && slide.type === 'content') {\n    // URL doğrulama ve güvenlik - daha sıkı kontrol\n    let safeImageUrl = slide.imageUrl;\n    \n    // URL'nin geçerli olup olmadığını kontrol et\n    if (!safeImageUrl || typeof safeImageUrl !== 'string' || safeImageUrl.length < 10 || \n        (!safeImageUrl.startsWith('https://') && !safeImageUrl.startsWith('http://'))) {\n      safeImageUrl = defaultTechImages[0];\n      console.log(`Invalid image URL detected: ${slide.imageUrl}, using fallback`);\n    }\n    \n    const safeTitle = escapeHtml(slide.title);\n    \n    // Slide numarası, başlık, görsel ve içerik sırasıyla\n    htmlTemplate += '<section>' + slideNumberHtml + '<h2>' + safeTitle + '</h2>';\n    htmlTemplate += '<div style=\"text-align:center;margin:20px 0;\"><img src=\"' + safeImageUrl + '\" alt=\"' + safeTitle + '\" style=\"width:100%;max-width:600px;height:200px;object-fit:cover;border-radius:8px;box-shadow:0 3px 12px rgba(0,0,0,0.2);\" onerror=\"this.src=\\'' + defaultTechImages[0] + '\\';\"></div>';\n    htmlTemplate += slide.content + '</section>';\n  } else {\n    htmlTemplate += '<section>' + slideNumberHtml + '<h2>' + escapeHtml(slide.title) + '</h2>' + slide.content + '</section>';\n  }\n}\n\nhtmlTemplate += '</div></div>';\nhtmlTemplate += '<script src=\"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js\"></script>';\nhtmlTemplate += '<script>Reveal.initialize({controls:true,progress:true,center:false,hash:true,transition:\"slide\",navigationMode:\"linear\"});</script>';\nhtmlTemplate += '</body></html>';\n\nreturn [{\n  json: {\n    title: slideData.title,\n    slides: slideData.slides,\n    slideCount: slideData.slides.length,\n    htmlContent: htmlTemplate,\n    fileName: `${dateForFileName} Teknoloji-Haberleri.html`,\n    fileSize: Buffer.byteLength(htmlTemplate, 'utf8'),\n    createdAt: new Date().toISOString(),\n    debug: {\n      aiResponseLength: aiResponse ? aiResponse.length : 0,\n      slidesFound: slideData.slides.length - 2\n    }\n  }\n}]; "
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2340,
+        1540
+      ],
+      "id": "55be222d-9c6f-4232-a32a-adf768d5d419",
+      "name": "HTML Slide Content Processor"
+    },
+    {
+      "parameters": {
+        "jsCode": "// HTML içeriğini binary data'ya çevir\nconst htmlData = $input.first().json;\n\n// HTML içeriğini kontrol et\nif (!htmlData.htmlContent || typeof htmlData.htmlContent !== 'string') {\n  throw new Error('HTML içeriği bulunamadı veya geçersiz format. htmlContent alanı boş veya undefined.');\n}\n\nconsole.log('HTML Content Length:', htmlData.htmlContent.length);\nconsole.log('HTML Data Keys:', Object.keys(htmlData));\n\n// HTML içeriğini Buffer'a çevir\nconst htmlBuffer = Buffer.from(htmlData.htmlContent, 'utf8');\n\nreturn [{\n  json: {\n    fileName: htmlData.fileName || `${new Date().getDate()} ${['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'][new Date().getMonth()]} Teknoloji-Haberleri.html`,\n    title: htmlData.title || 'Teknoloji Haberleri',\n    slideCount: htmlData.slideCount || 0,\n    fileSize: htmlData.fileSize || htmlBuffer.length,\n    createdAt: htmlData.createdAt || new Date().toISOString()\n  },\n  binary: {\n    data: {\n      data: htmlBuffer,\n      mimeType: 'text/html',\n      fileName: htmlData.fileName || `${new Date().getDate()} ${['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'][new Date().getMonth()]} Teknoloji-Haberleri.html`,\n      fileExtension: 'html'\n    }\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2620,
+        1540
+      ],
+      "id": "c29c0410-cfe0-4abf-85a2-a82a080aba6b",
+      "name": "Binary Converter"
+    },
+    {
+      "parameters": {
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1CRBZ02CSXIEI2TnYY-zt80qBGUMm3KXW",
+          "mode": "list",
+          "cachedResultName": "n8nNews",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1CRBZ02CSXIEI2TnYY-zt80qBGUMm3KXW"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2900,
+        1540
+      ],
+      "id": "68a0cb76-04a6-4baa-af7d-3e5c6e146ea0",
+      "name": "Google Drive'a Kaydet",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "duN0tmFOoyS0fV0m",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Google Drive upload sonucu işle\nconst driveResult = $input.first().json;\nconst htmlData = $('HTML Slide Content Processor').first().json;\n\nconsole.log('Google Drive Response:', JSON.stringify(driveResult, null, 2));\n\n// Başarı mesajı ve dosya bilgileri\nconst completionData = {\n  status: 'success',\n  message: 'Teknoloji haberleri HTML sunumu başarıyla Google Drive\\'a kaydedildi!',\n  presentationTitle: htmlData.title,\n  slideCount: htmlData.slideCount,\n  fileName: htmlData.fileName || 'teknoloji-haberleri.html',\n  fileSize: `${Math.round(htmlData.fileSize / 1024)} KB`,\n  createdAt: new Date().toISOString(),\n  dateFormatted: new Date().toLocaleDateString('tr-TR', {\n    year: 'numeric',\n    month: 'long',\n    day: 'numeric',\n    hour: '2-digit',\n    minute: '2-digit'\n  }),\n  googleDrive: {\n    fileId: driveResult.id || 'Bilinmiyor',\n    fileName: driveResult.name || htmlData.fileName || 'teknoloji-haberleri.html',\n    webViewLink: driveResult.webViewLink || 'Link bulunamadı',\n    webContentLink: driveResult.webContentLink || 'İndirme linki bulunamadı',\n    directLink: `https://drive.google.com/file/d/${driveResult.id}/view?usp=sharing`,\n    downloadLink: `https://drive.google.com/uc?export=download&id=${driveResult.id}`,\n    size: driveResult.size || 'Bilinmiyor',\n    owners: driveResult.owners || 'Bilinmiyor',\n    createdTime: driveResult.createdTime || 'Bilinmiyor'\n  },\n  features: [\n    '✨ Sadece RSS görsellerini kullanır',\n    '📱 Mobil uyumlu responsive tasarım', \n    '🎨 Güzel geçiş animasyonları',\n    '📊 Otomatik slide numaralandırma',\n    '🎯 İnteraktif navigasyon',\n    '☁️ Otomatik Google Drive kayıt',\n    '🖼️ RSS kaynaklı gerçek görseller'\n  ]\n};\n\nreturn [{\n  json: completionData\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3160,
+        1540
+      ],
+      "id": "b2e87138-3feb-4a0c-a657-0f293fc2b232",
+      "name": "Completion Processor"
+    },
+    {
+      "parameters": {
+        "jsCode": "// E-posta için veri hazırla\nconst completionData = $input.first().json;\nconst htmlBinaryData = $('Binary Converter').first().binary;\n\n// E-posta içeriği hazırla\nconst emailData = {\n  to: 'alicangullu84@gmail.com',\n  from: 'vli.kcc@gmail.com',\n  subject: `📊 Günlük Teknoloji Haberleri Sunumu - ${completionData.dateFormatted}`,\n  body: `\n    <div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f8f9fa;\">\n      <div style=\"background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 20px;\">\n        <h1 style=\"margin: 0; font-size: 24px;\">📊 Günlük Teknoloji Haberleri</h1>\n        <p style=\"margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;\">${completionData.dateFormatted}</p>\n      </div>\n      \n      <div style=\"background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);\">\n        <h2 style=\"color: #2c3e50; margin-top: 0;\">📈 Sunum Özeti</h2>\n        \n        <div style=\"background: #e8f4fd; padding: 15px; border-radius: 8px; border-left: 4px solid #3498db; margin: 15px 0;\">\n          <strong>📝 Slide Sayısı:</strong> ${completionData.slideCount}<br>\n          <strong>📁 Dosya Boyutu:</strong> ${completionData.fileSize}<br>\n          <strong>⏰ Oluşturulma:</strong> ${completionData.dateFormatted}\n        </div>\n        \n        <h3 style=\"color: #2c3e50;\">✨ Sunum Özellikleri:</h3>\n        <ul style=\"line-height: 1.6; color: #555;\">\n          ${completionData.features.map(feature => `<li>${feature}</li>`).join('')}\n        </ul>\n        \n        <div style=\"background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0;\">\n          <strong>📎 Ek Dosya:</strong> ${completionData.fileName}<br>\n          <small style=\"color: #666;\">Bu dosyayı tarayıcınızda açarak sunumu görüntüleyebilirsiniz.</small>\n        </div>\n        \n        <div style=\"background: #d1ecf1; padding: 15px; border-radius: 8px; border-left: 4px solid #17a2b8; margin: 20px 0;\">\n          <strong>☁️ Google Drive Linki:</strong><br>\n          <a href=\"${completionData.googleDrive.directLink}\" style=\"color: #17a2b8; text-decoration: none;\">Sunumu Google Drive'da Görüntüle</a>\n        </div>\n        \n        <hr style=\"border: none; border-top: 1px solid #eee; margin: 25px 0;\">\n        \n        <div style=\"text-align: center; color: #666; font-size: 14px;\">\n          <p>Bu e-posta otomatik olarak n8n workflow sistemi tarafından gönderilmiştir.</p>\n          <p>Günlük teknoloji haberlerini kaçırmayın! 🚀</p>\n        </div>\n      </div>\n    </div>\n  `,\n  attachmentName: completionData.fileName,\n  attachmentMimeType: 'text/html'\n};\n\nreturn [{\n  json: emailData,\n  binary: htmlBinaryData\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3440,
+        1540
+      ],
+      "id": "a383b993-7787-41b2-a54b-024295ce20e7",
+      "name": "E-posta Hazırlayıcı"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $json.to }}",
+        "subject": "={{ $json.subject }}",
+        "message": "={{ $json.body }}",
+        "options": {
+          "attachmentsUi": {
+            "attachmentsBinary": [
+              {}
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        3720,
+        1540
+      ],
+      "id": "82c17a37-32e0-44e9-b0f1-703837705415",
+      "name": "Gmail Gönder",
+      "webhookId": "6ede2f3c-006a-4bb1-93d2-9a8262604be8",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "EqGqoN6aCN5uwvwE",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "numberInputs": 10
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        540,
+        1640
+      ],
+      "id": "2414b3a4-a7a1-463e-b064-dcc58d690621",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "numberInputs": 10
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        540,
+        1100
+      ],
+      "id": "2e7b3e42-e145-4287-b996-d1f2e9abc8b9",
+      "name": "Merge1"
+    },
+    {
+      "parameters": {
+        "numberInputs": 10
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        540,
+        580
+      ],
+      "id": "540ef393-abb5-41eb-9443-c379a2513163",
+      "name": "Merge2"
+    },
+    {
+      "parameters": {
+        "numberInputs": 5
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        540,
+        2180
+      ],
+      "id": "691b57fb-7386-4805-9ea7-187c7fd3a574",
+      "name": "Merge3"
+    },
+    {
+      "parameters": {
+        "numberInputs": 4
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1140,
+        1520
+      ],
+      "id": "ae947a6f-f8f1-492b-876a-63aef077df96",
+      "name": "Merge4"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 7,
+              "triggerAtMinute": 30
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1160,
+        1380
+      ],
+      "id": "83c49742-c284-45bb-aa9e-08c1726e3394",
+      "name": "Schedule Trigger"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "RSS Read": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS Read1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "RSS Read2": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "RSS Read3": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "RSS Read4": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "RSS Read5": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 5
+          }
+        ]
+      ]
+    },
+    "RSS Read8": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 8
+          }
+        ]
+      ]
+    },
+    "RSS Read9": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 9
+          }
+        ]
+      ]
+    },
+    "RSS Read12": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "RSS Read13": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "RSS Read14": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "RSS Read15": {
+      "main": [
+        [
+          {
+            "node": "Merge1",
+            "type": "main",
+            "index": 5
+          }
+        ]
+      ]
+    },
+    "RSS Read21": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 7
+          }
+        ]
+      ]
+    },
+    "RSS Read22": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 8
+          }
+        ]
+      ]
+    },
+    "RSS Read25": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "RSS Read27": {
+      "main": [
+        [
+          {
+            "node": "Merge2",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "RSS Read30": {
+      "main": [
+        [
+          {
+            "node": "Merge3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "News Processor": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "HTML Slide Content Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Binary Converter": {
+      "main": [
+        [
+          {
+            "node": "Google Drive'a Kaydet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive'a Kaydet": {
+      "main": [
+        [
+          {
+            "node": "Completion Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Completion Processor": {
+      "main": [
+        [
+          {
+            "node": "E-posta Hazırlayıcı",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML Slide Content Processor": {
+      "main": [
+        [
+          {
+            "node": "Binary Converter",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge3": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Merge4": {
+      "main": [
+        [
+          {
+            "node": "News Processor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge2": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge1": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Merge4",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS Read25",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read27",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read21",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read22",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read12",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read13",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read14",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read15",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read3",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read4",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read5",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read8",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read9",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read30",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "E-posta Hazırlayıcı": {
+      "main": [
+        [
+          {
+            "node": "Gmail Gönder",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "83b83abf-3961-4aab-b112-57141631a4a2",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "361bf5cfb0dfd86fcc4d4f6dc050ee6c7654e6ade682853100f1779e2c2d5c06"
+  },
+  "id": "K75TfLLn9ilEYXiO",
+  "tags": []
+}
