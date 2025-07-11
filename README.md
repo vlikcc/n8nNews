@@ -17,7 +17,7 @@ Bu proje, RSS kaynaklarından teknoloji haberlerini otomatik olarak toplayıp, y
 
 ### 🎨 **Profesyonel Sunum Oluşturma**
 - Modern HTML reveal.js slide sunumları
-- Slide numaralandırması (Slide 1, 2, 3...)
+- Slide numaralandırması alt kısımda (1 / 32 formatında)
 - Her slide'da haber kaynağı gösterimi
 - RSS'den gelen gerçek görseller
 - Responsive tasarım (mobil uyumlu)
@@ -38,7 +38,7 @@ Bu proje, RSS kaynaklarından teknoloji haberlerini otomatik olarak toplayıp, y
 n8nNews/
 ├── n8n-docker/
 │   ├── docker-compose.yml          # n8n Docker konfigürasyonu
-│   ├── My workflow (2).json        # Ana workflow dosyası
+│   ├── techNewsWorkflow.json       # Ana workflow dosyası
 │   └── n8n-data/                   # n8n verileri
 │       ├── database.sqlite         # Workflow veritabanı
 │       ├── config                  # n8n ayarları
@@ -69,7 +69,7 @@ docker-compose up -d
 
 ### 4. Workflow'u İçe Aktarın
 - n8n arayüzünde "Import from file" seçeneğini kullanın
-- `My workflow (2).json` dosyasını yükleyin
+- `techNewsWorkflow.json` dosyasını yükleyin
 
 ### 5. Credential'ları Yapılandırın
 Aşağıdaki servisler için API anahtarları gerekli:
